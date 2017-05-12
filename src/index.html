@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Weather Map APP with React and OpenWeatherMap</title>
+    <link rel="shortcut icon" type="image/png" href="http://wes.io/ehRe/my-favourite-icon.png"/>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="/js/app-script.js"></script>
+
+    <script src="https://npmcdn.com/google-map-react@0.14.6/dist/GoogleMapReact.js"></script>
+
+    <script type="text/javascript">
+        console.API;
+
+        if (typeof console._commandLineAPI !== 'undefined') {
+            console.API = console._commandLineAPI; //chrome
+        } else if (typeof console._inspectorCommandLineAPI !== 'undefined') {
+            console.API = console._inspectorCommandLineAPI; //Safari
+        } else if (typeof console.clear !== 'undefined') {
+            console.API = console;
+        }
+
+        console.API.clear();
+    </script>
+  </body>
+</html>
+
+<!--
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>weather.js</title>
+
+    <link  rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <h1 class="text-center">Guntersville, AL</h1>
+            <div class="col-sm-6">
+                <h2>Current Conditions</h2>
+                <h3 id="current"></h3>
+            </div>
+            <div class="col-sm-6">
+                <h2>Forecast</h1>
+                <h3 id="forecast"></h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="static/lib/weather.js"></script>
+    <script>
+
+		Weather.setApiKey("ec10f26c407222857c4f4eda7a6148db");
+
+        Weather.getCurrent( "Guntersville", function( current ) {
+            $( "#current" ).html( "Temperature: " + current.temperature() + "&deg;K or " +
+                Weather.kelvinToFahrenheit( current.temperature() ) + "&deg;F or " +
+                Weather.kelvinToCelsius( current.temperature() ) + "&deg;C" +
+                "<br />Current Conditions: " + current.conditions() );
+        });
+        Weather.getForecast( "Guntersville", function ( forecast ) {
+            $( "#forecast" ).html( "High: " + forecast.high() + "&deg;K or " +
+                Weather.kelvinToFahrenheit( forecast.high() ) + "&deg;F or " +
+                Weather.kelvinToCelsius( forecast.high() ) + "&deg;C<br />Low: " +
+                forecast.low() + "&deg;K or " +
+                Weather.kelvinToFahrenheit( forecast.low() ) + "&deg;F or " +
+                Weather.kelvinToCelsius( forecast.low() ) + "&deg;C" );
+        });
+    </script>
+  </body>
+</html>
+
+-->

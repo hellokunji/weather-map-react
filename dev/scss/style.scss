@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+$color_main: #129fd9;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+	text-decoration: none;
+    background-color: rgba(0,0,0,0.01);
+}
+#root{
+	text-decoration: none;
+}
+.app{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 850px;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.1);
+    margin: 15px auto;
+    background-color: white;
+    min-height: 600px;
+}
+header{
+	height: 70px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.hLogo{
+    height: 100%;
+    width: 20%;
+    float: left;
+    padding: 10px 10px;
+    padding-left: 30px;
+}
+
+.hLogo img{
+    width: 50px;
+}
+.hSearch{
+	text-decoration: none;
+    height: 100%;
+    width: 60%;
+    float: left;
+    padding: 20px 24px;
+}
+.hSearch form{
+	text-decoration: none;
+}
+.hSearch form input{
+    border: 1px solid $color_main;
+    height: 30px;
+    width: 83%;
+    outline: none;
+    padding: 0 10px;
+    color: grey;
+}
+.hSearch form button{
+	background-color: $color_main;
+	border: none;
+    height: 30px;
+    width: 17%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.hSearch form button:hover{
+    opacity: 0.7;
+}
+.hSearch form button img{
+    width: 15px;
+    padding: 0;
+    margin: 0;
+}
+.hGeo{
+    height: 100%;
+    width: 20%;
+    float: left;
+    padding: 24px 10px;
+    padding-right: 30px;
+}
+.hGeo button{
+    background: none;
+    border: none;
+    float: right;
+    cursor: pointer;
+    outline: none;
+}
+.hGeo button img{
+    height: 24px;
+}
+.hGeo button:hover{
+    opacity: 0.7;
+}
+
+.weather{
+    background-color: #f8fdff;
+    padding: 20px 30px;
+    height: 300px;
+}
+.wCurrent{
+    width: 40%;
+    float: left;
+}
+.wcCity{
+    color: rgba(0,0,0,0.6);
+    font-size: 14px;
+}
+.wcTag{
+    height: 65px;
+    margin-top: 15px;
+}
+.wcTag img{
+	margin-top: 2px;
+    display: block;
+    float: left;
+    height: 60px;
+}
+.wcTag span.temp{
+    font-size: 42px;
+    color: #129fd9;
+    display: block;
+    float: left;
+}
+.wcTag span.unit{
+    display: block;
+    float: left;
+    margin-top: 8px;
+    margin-left: 8px;
+    color: rgba(0,0,0,0.6);
+    font-size: 21px;
+}
+.wcMain{
+	text-transform: uppercase;
+    color: rgba(0,0,0,0.6);
+    margin-bottom: 17px;
+}
+.wcExtra{
+	text-decoration: none;
+}
+.wceItem{
+    font-size: 14px;
+    color: rgba(0,0,0,0.6);
+    line-height: 22px;
+}
+.wceItem span{
+	text-decoration: none;
+}
+.wForecast{
+    width: 60%;
+    float: left;
+    height: 250px;
+    overflow-y: scroll;
+}
+.wForecast table{
+	text-decoration: none;
+}
+.wForecast table thead{
+	text-decoration: none;
+}
+.wForecast table thead tr{
+	text-decoration: none;	
+}
+.wForecast table thead tr th{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+    text-align: left;
+    padding-bottom: 3px;
+}
+.wForecast table tbody{
+		text-decoration: none;
+}
+.wForecast table tbody tr{
+	text-decoration: none;	
+}
+.wForecast table tbody tr td{
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+    text-align: left;
+    padding: 4px 35px 4px 0;
+}
+
+.map{
+    height: 230px;
+    width: 100%;
+}
+
+footer{
+    height: 50px;
+    width: 100%;
+    padding: 4px 0;
+}
+footer p{
+    text-align: center;
+    color: rgba(0,0,0,0.7);
+    font-size: 14px;
+}
+footer p a{
+    text-decoration: none;
+    color: #129fd9;	
+}
+footer p a:hover{
+	text-decoration: underline;	
+}
+
+.empty{
+    width: 100%;
+}
+.empty p{
+    line-height: 100%;
+    text-align: center;
+    color: rgb(18, 159, 217);
+    margin-top: 200px;
+}
