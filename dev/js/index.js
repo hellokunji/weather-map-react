@@ -222,7 +222,7 @@ class App extends React.Component {
 						</div>
 						<div className="hSearch">
 							<form onSubmit={this.handleChangeCity}>
-								<input id="cityInput" type="text" placeholder="City Name" autoFocus/>
+								<input id="cityInput" type="text" placeholder="City Name" autoFocus onChange={this.handleChangeCity}/>
 								<button type="submit" onClick={this.handleChangeCity}>
 									<img src="/media/search.png"/>
 								</button>
